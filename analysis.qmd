@@ -7,9 +7,11 @@ editor: visual
 ## 
 
 ```{r}
-#| label: tbl-breslau_summary
+#| label: tbl-breslau-summary
 #| tbl-cap: "Mean of 1687"
-library(HistData)   
+#| echo: false
+library(HistData) 
+library(tidyverse)
 data("Breslau")
 
 breslau_filtered <- Breslau |>
